@@ -26,3 +26,13 @@ function actualizarMuestroDeArray(){
         listaAmigos.appendChild(amigo);
     }
 }
+
+function sortearArrayDeAmigos() {
+    let amigoSorteado = document.getElementById('resultado');
+    if (arrayDeAmigosBase.length === 0) {
+        alert("¡No hay amigos para sortear!")
+    } else {
+        let indice = Math.floor(Math.random() * arrayDeAmigosBase.length);
+        amigoSorteado.textContent = "El ganardor es " + arrayDeAmigosBase[indice];
+    }
+}
