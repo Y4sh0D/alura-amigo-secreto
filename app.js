@@ -15,4 +15,12 @@ function agregarNombre(nombre){
     console.log(arrayDeAmigosBase);
 }
 
-
+function actualizarMuestroDeArray(){
+    let listaAmigos = document.getElementById("listaAmigos");
+    listaAmigos.innerHTML = "";
+    for (let i = 0; i < arrayDeAmigosBase.length; i++) {
+        let amigo = document.createElement("li");
+        amigo.textContent = arrayDeAmigosBase[i];
+        listaAmigos.appendChild(amigo);
+    }
+}
