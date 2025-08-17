@@ -13,6 +13,8 @@ function agregarNombre(nombre){
     
     document.getElementById("amigo").value = "";
     console.log(arrayDeAmigosBase);
+    
+    actualizarMuestroDeArray();
 }
 
 function actualizarMuestroDeArray(){
